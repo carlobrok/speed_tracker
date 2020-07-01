@@ -7,7 +7,7 @@ import csv
 import argparse
 
 # parse args
-parser = argparse.ArgumentParser(description="Script to analyze objects and estimate their speed in videos that move in a straight path perpendicular to the camera.",
+parser = argparse.ArgumentParser(description="Script to track objects and estimate their speed in videos that move in a straight path perpendicular to the camera.",
                                  formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=60, width=150))
 
 parser.add_argument('video_in', help="video input file path")
@@ -194,8 +194,8 @@ color = (randint(64, 255), randint(64, 255), randint(64, 255))
 tracker = cv2.TrackerCSRT_create()
 success = tracker.init(frame, bbox)
 
-print(">  Press space to pause, then s to save data to csv file and reset captured points")
-print(">  Press r to reset captured points")
+print(">  Press space to pause, then s to save data to csv file and reset cached points")
+print(">  Press r to reset cached points")
 
 center_points = []
 
@@ -251,7 +251,7 @@ while cap.isOpened():
             check_esc_exit(k)
 
 if not data_saved:
-    print("Press s to save captured data")
+    print("Press s to save cached data")
     if cv2.waitKey(0) & 0xFF == ord("s"):
         save_speeds()
 
