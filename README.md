@@ -32,7 +32,7 @@ Now the tracking starts. The position of the object is cached every frame.
 
 You can now control the analysis of the video as follows:
 
-* Pause / resume the video with *space*:
+* Pause / resume the video with *space*
   * When the video is paused or over, press *s* to save cached data
 
 * Clear the cached data with *r*
