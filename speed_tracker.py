@@ -88,7 +88,9 @@ def select_ref_line(event, x, y, flags, param):
         cv2.line(frame, refPts[0], (x, y), (0, 255, 0), 4)
         show_image()
 
+
 data_saved = False
+
 
 def save_speeds():
     global data_saved
@@ -129,7 +131,6 @@ def reset_points():
 
 def distance(p1, p2):
     return np.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
-
 
 
 # Create a video capture object to read videos
