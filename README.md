@@ -6,16 +6,16 @@ A script to **track objects** and **estimate** their **speed** in videos that mo
 The script uses OpenCV to track the objects and exports the collected estimated speed data to a csv file.
 
 
-## Installation
+### Installation
 
-An **OpenCV 3.4+** installation is needed. Either build it from source ([installation guide for Ubuntu](https://docs.opencv.org/master/d2/de6/tutorial_py_setup_in_ubuntu.html)) or install it with
+An **OpenCV 3.4+** installation is needed. Either build it from source ([installation guide for Ubuntu](https://docs.opencv.org/master/d2/de6/tutorial_py_setup_in_ubuntu.html)) or install it with:
 ```
 pip3 install opencv-contrib-python
 ```
 
-## Instructions
+### Instructions
 
-1. **Run program** with `$ python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]`
+1. **Run program**:`$ python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]`
 
 
 2. Press *r* to **rotate the video** clockwise by 90 degrees. If the video is aligned press *space*.
@@ -26,5 +26,15 @@ pip3 install opencv-contrib-python
 
 4. Click and drag to **select the object** you want to track. Press *space* to continue.
 
+### Hotkeys
 
-Now the tracking starts. The position of the object is cached every frame. 
+Now the tracking starts. The position of the object is cached every frame.
+
+You can now control the analysis of the video as follows:
+
+* Pause / resume the video with *space*:
+  * When the video is paused or over, press *s* to save cached data
+
+* Clear the cached data with *r*
+
+* Exit the video with *esc*
