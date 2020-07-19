@@ -17,7 +17,7 @@ pip3 install opencv-contrib-python
 
 1. **Run program**: 
 ```
-$ python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]
+python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]
 ```
 
 
