@@ -1,2 +1,10 @@
 csvs/
+*.csv
+*.odt
+*.xlsx
+
 videos/
+*.mp4
+*.avi
+
+venv/
