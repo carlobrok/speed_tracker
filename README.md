@@ -15,7 +15,10 @@ pip3 install opencv-contrib-python
 
 ### Instructions
 
-1. **Run program**: `$ python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]`
+1. **Run program**: 
+```
+$ python3 speed_tracker.py video_in csv_out frame_time [-l reference_length] [-r rotation]
+```
 
 
 2. Press *r* to **rotate the video** clockwise by 90 degrees. If the video is aligned press *space*.
